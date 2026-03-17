@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <div class="con">
+        <div class="input">
+            <div class="text">
+                <h1 id="h1"></h1>
+            </div>
+            <div class="btn">
+                <button onclick="click1()">1</button>
+                <button onclick="click2()">2</button>
+                <button onclick="click3()">3</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{
+            background-color: red;            
+        }
+        .con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .input{
+            border: solid 2px pink;
+            border-radius: 10px;
+            padding: 50px;
+            background-color: darkred;
+
+        }
+        .text{
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+    <script>
+        function click1(){
+            document.getElementById("h1").innerText = "1";
+        }
+        function click2(){
+            document.getElementById("h1").innerText = "2";
+        }
+        function click3(){
+            document.getElementById("h1").innerText = "Charlotte gaat Kobe pijpen!";
+        }
+    </script>
+</body>
+</html>
